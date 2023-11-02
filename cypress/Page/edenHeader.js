@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-
+//Locadores
 class EdenHeaderLocators {
     constructor(){
         //Botonera y Header Principal
@@ -13,6 +13,7 @@ class EdenHeaderLocators {
      
     }
 }
+//Metodos
 export default class EdenHeader {
     constructor(){
         this.locators = new EdenHeaderLocators();
@@ -30,7 +31,6 @@ export default class EdenHeader {
     getSearchInput(){
         return cy.get(this.locators.searchInput);
     }
-
     getSuggestion(){
         return cy.get(this.locators.Suggestion);
     }
